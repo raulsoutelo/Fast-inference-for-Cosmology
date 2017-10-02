@@ -1,5 +1,3 @@
-# Fast-inference-for-Cosmology
-
 In this project I have implemented five different methods to explore the parameters of a cosmological model using MCMC methods (all of
 them are variants of the Metropolis-Hastings method). Cosmological models have two important characteristics:
 1) Evaluating the function depends on the parameters that are modified with respect to the previous evaluation (fast and slow parameters)
