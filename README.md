@@ -4,6 +4,7 @@ In this project I have implemented five different methods to explore the paramet
 them are variants of the Metropolis-Hastings method). Cosmological models have two important characteristics:
 1) Evaluating the function depends on the parameters that are modified with respect to the previous evaluation (fast and slow parameters)
 2) Some parameters are not of interest (nuisance parameters)
+
 These five methods are intended to exploit these two features, so that the estimation of the probability distribution of the parameters of interest is as efficient as possible.
 
 The methods are:
