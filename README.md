@@ -1,11 +1,14 @@
 # Fast-inference-for-Cosmology
 
-In this project I have implemented five different methods to explore the parameters of a cosmological model using MCMC methods (all of
-them are variants of the Metropolis-Hastings method). Cosmological models have two important characteristics:
-1) Evaluating the function depends on the parameters that are modified with respect to the previous evaluation (fast and slow parameters)
+I have developed this project as the Dissertation for the MSc in Artificial Intelligence at the University of Edinburgh. It has been supervised by Dr. Iain Murray.
+
+In this project I have implemented and compared five different Markov chain Monte Carlo (MCMC) methods from the literature to explore the parameters of cosmological models. All methods are variants of the Metropolis-Hastings method, some of them are Pseudo-Marginal approaches. MCMC methods are a technique to estimate the probability distribution of the parameters of a model when being Bayesian about them.
+
+Cosmological models have two important characteristics:
+1) Evaluating a set of parameters depends on which ones are modified with respect to the previous evaluation (fast and slow parameters)
 2) Some parameters are not of interest (nuisance parameters)
 
-These five methods are intended to exploit these two features, so that the estimation of the probability distribution of the parameters of interest is as efficient as possible.
+These two features make convenient to use a case-specific method instead of a standard approach (there are many MCMC software packages out there!). The five methods selected are intended to exploit these two features, so that the estimation of the probability distribution of the parameters of interest is as efficient as possible.
 
 The methods are:
 1) Metropolis-Hastings: 
@@ -57,4 +60,4 @@ Two probability distributions have been explored with these methods:
 A more detailed explanation of the methods implemented and their performance on these two probability distributions is found in 
 dissertation_RaulSoutelo.pdf.
 
-In order to run the code, it is enough to run the script main.py (installing the emcee package is needed). Creating the object P from the class Toy_Posterior or from the class Real_Posterior, we can explore the two different probability distributions. In order to use the code to explore a different probability distribution, we need to create a new class with the same attributes and methods than these ones.
+In order to run the code, it is enough to run the script main.py (installing the emcee package is needed). Creating the object P from the class Toy_Posterior or from the class Real_Posterior, allows us to explore the two different probability distributions. In order to use the code to explore a different probability distribution, please create a new class in the same manner than the ones provided.
